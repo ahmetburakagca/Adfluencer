@@ -1,0 +1,17 @@
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+.vs/
+.idea/
+
+Thumbs.db
+Desktop.ini

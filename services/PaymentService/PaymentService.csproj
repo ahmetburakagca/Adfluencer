@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Events\**" />
+    <Compile Remove="Repositories\**" />
+    <Content Remove="Entities\**" />
+    <Content Remove="Events\**" />
+    <Content Remove="Repositories\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Events\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Events\**" />
+    <None Remove="Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+    <PackageReference Include="Stripe" Version="1.12.0" />
+    <PackageReference Include="Stripe.net" Version="48.0.2" />
+  </ItemGroup>
+
+</Project>
